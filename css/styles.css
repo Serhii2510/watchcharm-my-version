@@ -141,3 +141,66 @@ body {
 /* =========== /Common styles =========== */
 
 /* =========== Page Header styles =========== */
+.page-header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.page-header {
+  border-bottom: 1px solid rgba(12, 12, 12, 0.1);
+  box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
+}
+
+.logo {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+}
+
+@media only screen and (max-width: 1279px) {
+  .menu,
+  .social {
+    display: none;
+  }
+
+  .page-header {
+    padding: 20px 0;
+  }
+
+  .menu-open-btn {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    line-height: 0;
+    stroke: #0c0c0c;
+  }
+
+  .menu-open-btn-icon {
+    width: 34px;
+    height: 34px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  .page-header {
+    padding: 26px 0;
+  }
+
+  .menu-open-btn-icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .menu,
+  .social {
+    display: flex;
+  }
+
+  .menu-open-btn {
+    display: none;
+  }
+}
