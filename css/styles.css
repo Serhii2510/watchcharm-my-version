@@ -746,11 +746,14 @@ body {
   background-color: #f3f3f3;
 }
 
+.catalog-list-img-wrapper {
+  padding: 18px 36px;
+  margin-bottom: 10px;
+}
+
 .catalog-list-img {
-  align-self: center;
   max-width: 208px;
   height: 226px;
-  margin-bottom: 28px;
 }
 
 .catalog-list-title {
@@ -812,13 +815,16 @@ body {
 
   .catalog-list-item {
     flex-basis: calc((100% - 16px) / 2);
-    padding: 24px 32px;
+    padding: 24px 31px;
+  }
+
+  .catalog-list-img-wrapper {
+    padding: 10px 6px;
   }
 
   .catalog-list-img {
     max-width: 268px;
     height: 292px;
-    margin-bottom: 20px;
   }
 
   .catalog-list-title {
@@ -979,6 +985,86 @@ body {
   }
 }
 /* =========== /Advertisement Section styles =========== */
+
+/* =========== Sale Section styles =========== */
+.sale {
+  padding-top: 60px;
+}
+
+.sale-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.sale-img-block {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.sale-img-list {
+  display: flex;
+  column-gap: 5px;
+}
+
+.sale-img-item {
+  padding: 13px 14px;
+  line-height: 0;
+  flex-basis: calc((100% - 15px) / 4);
+}
+
+.sale-main-photo-wrapper {
+  padding: 50px;
+}
+
+.sale-img-photo {
+  width: 52px;
+  height: 54px;
+}
+
+.sale-text-block {
+  padding: 48px 28px;
+  border-radius: 30px;
+  background-color: #3350e9;
+}
+
+.sale-text-block-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: -0.02em;
+  color: #fbfbfb;
+  margin-bottom: 10px;
+}
+
+.sale-product-tag {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: rgba(251, 251, 251, 0.5);
+  margin-bottom: 20px;
+}
+
+.sale-price-list {
+  display: flex;
+  align-items: center;
+  column-gap: 9px;
+}
+
+@media only screen and (min-width: 768px) {
+  .sale {
+    padding-top: 80px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .sale {
+    padding-top: 100px;
+  }
+}
+/* =========== /Sale Section styles =========== */
 @media only screen and (min-width: 768px) {
 }
 
