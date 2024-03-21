@@ -93,6 +93,7 @@
         </ul>
       </div>
     </header>
+
     <main>
       <section class="hero">
         <div class="container">
@@ -169,19 +170,171 @@
               "
               media="(max-width: 767px)"
             />
-            <img src="./images/hero/watch-mobile.png" alt="Watch" />
+            <img
+              class="hero-img"
+              src="./images/hero/watch-mobile.png"
+              alt="Watch"
+            />
           </picture>
         </div>
       </section>
+
       <section class="about-us" id="about-us">
-        <div class="container"></div>
+        <div class="container about-us-container">
+          <div class="about-us-text-block">
+            <h2 class="section-title about-us-title">About Us</h2>
+            <ul class="about-us-text-list">
+              <li class="about-us-text-item">
+                Welcome to our premium watch collection, where luxury and style
+                meet functionality and precision. Our selection of timepieces
+                embodies the very best in Swiss craftsmanship and engineering,
+                ensuring that you'll always have a reliable and stylish
+                accessory on your wrist.
+              </li>
+              <li class="about-us-text-item">
+                At our premium watch collection, we believe that a watch is more
+                than just a timekeeping device – it's a statement piece that
+                reflects your personality and style. So why settle for anything
+                less than the best?
+              </li>
+            </ul>
+            <a class="scroll-to-catalog" href="#catalog">View catalog</a>
+          </div>
+          <picture>
+            <source
+              srcset="
+                ./images/about-us/watch-on-cloth-desktop.png    1x,
+                ./images/about-us/watch-on-cloth-desktop@2x.png 2x
+              "
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="
+                ./images/about-us/watch-on-cloth-tablet.png    1x,
+                ./images/about-us/watch-on-cloth-tablet@2x.png 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ./images/about-us/watch-on-cloth-mobile.png    1x,
+                ./images/about-us/watch-on-cloth-mobile@2x.png 2x
+              "
+              media="(max-width: 767px)"
+            />
+            <img
+              class="about-us-img"
+              src="./images/about-us/watch-on-cloth-mobile.png"
+              alt="Watch on cloth"
+            />
+          </picture>
+        </div>
       </section>
+
       <section class="catalog" id="catalog">
-        <div class="container"></div>
+        <div class="container">
+          <h2 class="section-title">Catalog</h2>
+          <ul class="catalog-list">
+            <li class="catalog-list-item">
+              <img
+                class="catalog-list-img"
+                srcset="
+                  ./images/catalog/watch1.png    1x,
+                  ./images/catalog/watch1@2x.png 2x
+                "
+                src="./images/catalog/watch1.png"
+                alt="Garmin Fenix 7X Pro Sapphire Solar"
+              />
+              <h3 class="catalog-list-title">
+                Garmin Fenix 7X Pro Sapphire Solar
+              </h3>
+              <p class="catalog-list-price">€500</p>
+            </li>
+            <li class="catalog-list-item">
+              <img
+                class="catalog-list-img"
+                srcset="
+                  ./images/catalog/watch2.png    1x,
+                  ./images/catalog/watch2@2x.png 2x
+                "
+                src="./images/catalog/watch2.png"
+                alt="Garmin Marq Athlete"
+              />
+              <h3 class="catalog-list-title">Garmin Marq Athlete</h3>
+              <p class="catalog-list-price">€450</p>
+            </li>
+            <li class="catalog-list-item">
+              <img
+                class="catalog-list-img"
+                srcset="
+                  ./images/catalog/watch3.png    1x,
+                  ./images/catalog/watch3@2x.png 2x
+                "
+                src="./images/catalog/watch3.png"
+                alt="Garmin Descent MK1"
+              />
+              <h3 class="catalog-list-title">Garmin Descent MK1</h3>
+              <p class="catalog-list-price">€680</p>
+            </li>
+            <li class="catalog-list-item">
+              <img
+                class="catalog-list-img"
+                srcset="
+                  ./images/catalog/watch4.png    1x,
+                  ./images/catalog/watch4@2x.png 2x
+                "
+                src="./images/catalog/watch4.png"
+                alt="Garmin D2 Delta PX"
+              />
+              <h3 class="catalog-list-title">Garmin D2 Delta PX</h3>
+              <p class="catalog-list-price">€380</p>
+            </li>
+            <li class="catalog-list-item is-hidden">
+              <img
+                class="catalog-list-img"
+                srcset="
+                  ./images/catalog/watch5.png    1x,
+                  ./images/catalog/watch5@2x.png 2x
+                "
+                src="./images/catalog/watch5.png"
+                alt="Garmin Fenix 6 Pro Solar"
+              />
+              <h3 class="catalog-list-title">Garmin Fenix 6 Pro Solar</h3>
+              <p class="catalog-list-price">€400</p>
+            </li>
+            <li class="catalog-list-item is-hidden">
+              <img
+                class="catalog-list-img"
+                srcset="
+                  ./images/catalog/watch6.png    1x,
+                  ./images/catalog/watch6@2x.png 2x
+                "
+                src="./images/catalog/watch6.png"
+                alt="Tube Watch S42 Date Steel With Black Case"
+              />
+              <h3 class="catalog-list-title">
+                Tube Watch S42 Date Steel With Black Case
+              </h3>
+              <p class="catalog-list-price">€395</p>
+            </li>
+          </ul>
+          <button class="catalog-show-btn" type="button">Show more</button>
+        </div>
       </section>
+
       <section class="advertisement">
-        <div class="container"></div>
+        <div class="container">
+          <h2 class="section-title visually-hidden">Advertisement</h2>
+          <div class="ad-block">
+            <p class="ad-text">
+              Choose <span class="accent-color-ad">your story</span>, making
+              every moment unique. Time is your style, and we reveal it.
+            </p>
+            <a class="scroll-to-contact" href="#contact-us">Contact Us</a>
+          </div>
+        </div>
       </section>
+
       <section class="sale" id="sale">
         <div class="container"></div>
       </section>
