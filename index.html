@@ -115,10 +115,10 @@
                   <img
                     class="hero-reviews-avatar"
                     srcset="
-                      ./images/hero/victoria-romashenko-avatar.png    1x,
-                      ./images/hero/victoria-romashenko-avatar@2x.png 2x
+                      ./images/reviews/victoria-romashenko-avatar.png    1x,
+                      ./images/reviews/victoria-romashenko-avatar@2x.png 2x
                     "
-                    src="./images/hero/victoria-romashenko-avatar.png"
+                    src="./images/reviews/victoria-romashenko-avatar.png"
                     alt="Victoria Romashenko avatar"
                   />
                 </li>
@@ -126,10 +126,10 @@
                   <img
                     class="hero-reviews-avatar"
                     srcset="
-                      ./images/hero/john-wax-avatar.png    1x,
-                      ./images/hero/john-wax-avatar@2x.png 2x
+                      ./images/reviews/john-wax-avatar.png    1x,
+                      ./images/reviews/john-wax-avatar@2x.png 2x
                     "
-                    src="./images/hero/john-wax-avatar.png"
+                    src="./images/reviews/john-wax-avatar.png"
                     alt="John Wax avatar"
                   />
                 </li>
@@ -137,10 +137,10 @@
                   <img
                     class="hero-reviews-avatar"
                     srcset="
-                      ./images/hero/anastasia-trachuk-avatar.png    1x,
-                      ./images/hero/anastasia-trachuk-avatar@2x.png 2x
+                      ./images/reviews/anastasia-trachuk-avatar.png    1x,
+                      ./images/reviews/anastasia-trachuk-avatar@2x.png 2x
                     "
-                    src="./images/hero/anastasia-trachuk-avatar.png"
+                    src="./images/reviews/anastasia-trachuk-avatar.png"
                     alt="Anastasia Trachuk avatar"
                   />
                 </li>
@@ -441,14 +441,251 @@
       </section>
 
       <section class="reviews" id="reviews">
-        <div class="container"></div>
+        <div class="container">
+          <h2 class="section-title">Reviews</h2>
+          <ul class="reviews-list">
+            <li class="reviews-list-item is-active">
+              <img
+                class="reviews-list-img"
+                srcset="
+                  ./images/reviews/john-wax-avatar.png    1x,
+                  ./images/reviews/john-wax-avatar@2x.png 2x
+                "
+                src="./images/reviews/john-wax-avatar.png"
+                alt="John Wax avatar"
+                width="56"
+                height="56"
+              />
+              <h3 class="reviews-list-fullname">John Wax</h3>
+              <p class="reviews-list-text">
+                Buying a watch from was the best choice for me. The design is
+                perfectly combined with high quality materials. The strap fits
+                nicely on the hand, and the mechanism works flawlessly.
+              </p>
+            </li>
+            <li class="reviews-list-item">
+              <img
+                class="reviews-list-img"
+                srcset="
+                  ./images/reviews/victoria-romashenko-avatar.png    1x,
+                  ./images/reviews/victoria-romashenko-avatar@2x.png 2x
+                "
+                src="./images/reviews/victoria-romashenko-avatar.png"
+                alt="Victoria Romashenko avatar"
+                width="56"
+                height="56"
+              />
+              <h3 class="reviews-list-fullname">Victoria Romashenko</h3>
+              <p class="reviews-list-text">
+                Can't take my eyes off my watch from. Every time I put it on, it
+                is admired by those around me. The build quality and attention
+                to detail make it a real gem among my accessories.
+              </p>
+            </li>
+            <li class="reviews-list-item is-hidden">
+              <img
+                class="reviews-list-img"
+                srcset="
+                  ./images/reviews/anastasia-trachuk-avatar.png    1x,
+                  ./images/reviews/anastasia-trachuk-avatar@2x.png 2x
+                "
+                src="./images/reviews/anastasia-trachuk-avatar.png"
+                alt="Anastasia Trachuk avatar"
+                width="56"
+                height="56"
+              />
+              <h3 class="reviews-list-fullname">Anastasia Trachuk</h3>
+              <p class="reviews-list-text">
+                My watch from is a real masterpiece. Every detail impresses with
+                the high quality of execution. Special features like [specify
+                features] make it an indispensable companion in my daily life.
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section class="contact-us" id="contact-us">
-        <div class="container"></div>
+        <div class="container">
+          <h2 class="section-title">Contact Us</h2>
+          <div class="contact-us-wrapper">
+            <div class="contact-us-form-block">
+              <p class="contact-us-title">
+                Please use the form below to contact us. Enter your name, email,
+                phone, and message and we'll get back to you shortly.
+              </p>
+              <form class="contact-us-form" name="contact-form">
+                <input
+                  class="contact-input"
+                  name="user-name"
+                  type="text"
+                  pattern="[a-zA-Zа-яА-ЯіІїЇєЄґҐʼ]+"
+                  placeholder="Name"
+                  required
+                  autofocus
+                />
+                <input
+                  class="contact-input"
+                  name="user-email"
+                  type="email"
+                  placeholder="Email"
+                  required
+                />
+                <input
+                  class="contact-input"
+                  name="user-phone"
+                  type="tel"
+                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                  placeholder="+380"
+                  title="xxx-xxx-xx-xx"
+                  required
+                />
+                <textarea
+                  class="contact-textarea"
+                  name="user-comment"
+                  placeholder="Comment"
+                  required
+                ></textarea>
+                <button class="contact-btn" type="submit">Send</button>
+              </form>
+            </div>
+            <picture>
+              <source
+                srcset="
+                  ./images/contact-us/watch-on-brick-desktop.png    1x,
+                  ./images/contact-us/watch-on-brick-desktop@2x.png 2x
+                "
+                media="(min-width: 1280px)"
+              />
+              <source
+                srcset="
+                  ./images/contact-us/watch-on-brick-tablet.png    1x,
+                  ./images/contact-us/watch-on-brick-tablet@2x.png 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./images/contact-us/watch-on-brick-mobile.png    1x,
+                  ./images/contact-us/watch-on-brick-mobile@2x.png 2x
+                "
+                media="(max-width: 767px)"
+              />
+              <img
+                class="contact-us-img"
+                src="./images/contact-us/watch-on-brick-mobile.png"
+                alt="Watch on the brick"
+              />
+            </picture>
+          </div>
+        </div>
       </section>
     </main>
 
-    <footer id="footer"></footer>
+    <footer class="footer" id="footer">
+      <div class="footer-container">
+        <div class="footer-first-block">
+          <div class="footer-logo-block">
+            <a class="logo footer-logo" href="./index.html">watchcharm</a>
+            <ul class="footer-social">
+              <li class="footer-social-item">
+                <a
+                  class="footer-social-link"
+                  href="https://www.facebook.com/goITclub/"
+                  target="_blank"
+                >
+                  <svg
+                    class="footer-social-icon"
+                    width="20"
+                    height="20"
+                    aria-label="facebook icon"
+                  >
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a
+                  class="footer-social-link"
+                  href="https://www.instagram.com/goitclub/"
+                  target="_blank"
+                >
+                  <svg
+                    class="footer-social-icon"
+                    width="20"
+                    height="20"
+                    aria-label="instagram icon"
+                  >
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a
+                  class="footer-social-link"
+                  href="https://www.youtube.com/c/GoIT"
+                  target="_blank"
+                >
+                  <svg
+                    class="footer-social-icon"
+                    width="20"
+                    height="20"
+                    aria-label="youtube icon"
+                  >
+                    <use href="./images/icons.svg#icon-youtube"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <h2 class="footer-title">
+            Have the time of your life with our watches: where high-class
+            craftsmanship meets impeccable design
+          </h2>
+        </div>
+        <div class="footer-second-block">
+          <nav class="footer-nav">
+            <ul class="footer-menu">
+              <li class="footer-menu-item">
+                <a class="footer-menu-link" href="./index.html">Home</a>
+              </li>
+              <li class="footer-menu-item">
+                <a class="footer-menu-link" href="#about-us">About Us</a>
+              </li>
+              <li class="footer-menu-item">
+                <a class="footer-menu-link" href="#catalog">Catalog</a>
+              </li>
+              <li class="footer-menu-item">
+                <a class="footer-menu-link" href="#sale">Sale</a>
+              </li>
+              <li class="footer-menu-item">
+                <a class="footer-menu-link" href="#reviews">Reviews</a>
+              </li>
+              <li class="footer-menu-item">
+                <a class="footer-menu-link" href="#contact-us">Contact Us</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="footer-address">
+            <a class="footer-phone" href="tel:+380684439426"
+              >+380 (68) 443-94-26</a
+            >1678 S. Pioneer Road Salt Lake City UT 84104
+          </address>
+        </div>
+        <div class="footer-third-block">
+          <p class="footer-copyright">
+            &#169;2023 The Watch Spot. All rights reserved.
+          </p>
+          <ul class="footer-info-list">
+            <li class="footer-info-item">
+              <a class="footer-info-link" href="#">Terms of Service</a>
+            </li>
+            <li class="footer-info-item">
+              <a class="footer-info-link" href="#">Privacy Policy</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
